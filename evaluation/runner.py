@@ -141,7 +141,8 @@ def run_evaluation(
         "answer": answer,
         "ground_truth": ground_truth,
         "scores": scores,
-        "verdict": verdict
+        "verdict": verdict["status"],
+        "reasons": verdict["reasons"]
     }
 
     # 3️⃣ Log run
